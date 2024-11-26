@@ -169,7 +169,7 @@ fun SetAlarmButton(modifier: Modifier = Modifier) {
           Toast.LENGTH_SHORT
         ).show()
         
-        timeRemaining.intValue = 10
+        timeRemaining.intValue = 60
         scope.launch {
           while (timeRemaining.intValue > 0) {
             delay(1000)
